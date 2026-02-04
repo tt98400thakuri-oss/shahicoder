@@ -1,0 +1,180 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: #131921;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-self: center;
+    gap: 15px;
+    height: 70px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.logo img{
+    height: 40px;
+    width: 130px;
+}
+.location{
+    font-size: 13px;
+}
+.search{
+    flex: 1;
+    display: flex;
+}
+.search input{
+    padding: 6px;
+    width: 800px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+.search button{
+    padding: 15px 10px;
+    border: none;
+    background-color: orange;       
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: white;
+}
+.menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+.menu li{
+    margin-left: 150px;
+    font-size: 15px;
+}
+.menu a{
+    color: goldenrod;
+    text-decoration: none;
+    
+}
+.menu a:hover{
+    color: darkorange;
+    text-decoration: underline;
+}
+.logo :hover{
+    cursor: pointer;
+    color: darkorange;
+}
+.location:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: darkorange;
+}
+.menu a,
+.search button,
+.logo,
+.search input{
+    transition: all 1s ease-in-out;
+}
+.search input:focus{
+    border: 2px solid orange;
+}
+.form-wrap{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.demo-form{
+    background-color: lightgray;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.demo-form h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group{
+    margin-bottom: 10px;
+    
+}
+.form-group label{
+    display:block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.demo-form input,
+.demo-form select{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.inline{
+    display: flex;
+    gap: 10px;
+}
+.demo-form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #232f3e;
+    border: 1px solid yellowgreen;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.demo-form input:focus,
+.demo-form select:focus{
+    border: 2px solid orange;
+    outline: none;
+}
+.demo-form button:hover{
+    background-color: orange;
+    transform: scale(0.95);
+}
+.demo-form button{
+    transition: all 2s ease;
+}
+.inline label{
+    display: flex;
+}
+.footer{
+    background-color:#030404;
+    color: white;
+    font-size: 10px;
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-left,
+.footer-right,
+.footer-social,
+.footer-center{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000px;
+}
+.footer a{
+    color: antiquewhite;
+    text-decoration: none;
+    transition: al 1s ease;
+}
+.footer-center a:hover{
+    text-decoration: underline;
+    color: orange;
+    text-shadow:
+    0 0 4px orange,
+    0 0 8px orange;
+}
+.footer-social a{
+    font-size: 14px;
+}
+.footer-social a:hover{
+    transform: scale(1,2);
+}
